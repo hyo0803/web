@@ -9,16 +9,19 @@ var city1 = {
     // 3. ---------------
     getName() {
         // метод для первого объекта
-        city1.getName = function() {
-            document.write(city1.name + '<br/>')
-        }
+        return this.name;
     },
 
     // 4. ----------------
     exportStr() {
         // метод для первого объекта
         for (let key in city1) {
-            document.write(key + ' = ' + city1[key] + '<br/>')
+            document.write(i + city1[key] + '<br/>')
+            if (city1[key].includes('(')) {
+                document.write('function')
+            } else {
+                continue;
+            }
         }
     },
 };
@@ -31,7 +34,7 @@ var city2 = {
     // 3. ---------------
     getName() {
         // метод для второго объекта
-        document.write(city2.name + '<br/>')
+        return this.name;
     },
 
     // 4. ----------------
@@ -47,14 +50,14 @@ var city2 = {
 // тк мы вводим данные, то используем условие и выводим значение метода
 if (city == "city 1") {
     document.write('<br/>' + 'Задание 3' + '<br/>');
-    city1.getName();
+    document.write(city1.getName() + '<br/>');
 
     document.write('<br/>' + 'Задание 4' + '<br/>');
     city1.exportStr();
 
 } else if (city == "city 2") {
     document.write('<br/>' + 'Задание 3' + '<br/>');
-    city2.getName();
+    document.write(city2.getName() + '<br/>');
 
     document.write('<br/>' + 'Задание 4' + '<br/>');
     city2.exportStr();
