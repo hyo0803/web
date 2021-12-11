@@ -1,0 +1,61 @@
+.intro{
+    font-size: 25px;
+    font-family: Times;
+    text-align: center;
+    margin: 5px;
+}
+.block {
+    display: block;
+    margin-left: 40px; /* Отступ слева в пикселах */
+    margin-right: 40px; /* Отступ справа в пикселах */
+    margin-bottom: 40px;
+    background-color: rgb(221, 242, 250);
+    border: 2px rgb(221, 242, 250);
+    border-radius: 10%;
+    padding: 5%;
+}
+#data{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.block .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#area {
+    width: 240px;
+    height: 240px;
+    background-color: mintcream;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: lightblue;
+    width: 80px;
+    height: 80px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    width: 70px;
+    height: 35px;
+}
