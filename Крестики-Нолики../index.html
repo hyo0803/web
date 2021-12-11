@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Крестики-Нолики</title>
+    </head>
+
+    <body>
+        <center><div class="intro">Крестики-Нолики</div></center>
+        <div class="block">
+            <div class="feed">
+                <div id="data">
+                    <p>РАУНД</p>
+                    <p>Игрок 1 - Крестики ('X')<br>
+                    Игрок 2 - Нолики ('O')</p>
+                </div>
+
+            </div>
+            <div class="wrapper">
+                <div id="area">
+                        <div class='box'></div>
+                        <div class='box'></div>
+                        <div class='box'></div>
+
+                        <div class='box'></div>
+                        <div class='box'></div>
+                        <div class='box'></div>
+
+                        <div class='box'></div>
+                        <div class='box'></div>
+                        <div class='box'></div>
+                </div>
+            </div>
+            <div id='data'>
+                <p>Победа:</p>
+                <div id="winnerres"></div>
+            </div>
+            <div class='cont'>
+                <input class="button" type="submit" value="Submit" onclick="location.reload(); return false;">
+            </button></div>
+           
+        </div>
+
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
